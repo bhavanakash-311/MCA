@@ -1,0 +1,462 @@
+
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fc;
+    color: #173b68;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 60px;
+
+    background-color: #123b68;
+
+    color: white;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+
+    width: 30%;
+}
+
+.logo span {
+    margin-right: 8px;
+}
+
+
+/* Navigation */
+
+.nav-links {
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #55a5ff;
+}
+
+.nav-links .active {
+    color: #55a5ff;
+}
+
+
+/* Navbar Buttons */
+
+.nav-buttons {
+    width: 30%;
+
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 15px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+}
+
+.login-btn {
+    color: white;
+
+    border: 1px solid white;
+
+    padding: 10px 25px;
+
+    border-radius: 6px;
+}
+
+.register-btn {
+    background-color: #1478ed;
+
+    color: white;
+
+    padding: 10px 22px;
+
+    border-radius: 6px;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+    opacity: 0.85;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 360px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 8%;
+
+    background:
+        linear-gradient(
+            rgba(13, 50, 88, 0.75),
+            rgba(13, 50, 88, 0.75)
+        ),
+        url("https://images.unsplash.com/photo-1562774053-701939374585")
+        center/cover;
+
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+
+.small-heading {
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+    font-size: 48px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-text {
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* Hero Buttons */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 20px;
+}
+
+.get-started,
+.learn-more {
+    padding: 14px 30px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.get-started {
+    background-color: #1478ed;
+
+    color: white;
+}
+
+.learn-more {
+    border: 1px solid white;
+
+    color: white;
+}
+
+.get-started:hover {
+    background-color: #0d5fbd;
+}
+
+
+/* ================= FEATURES ================= */
+
+.features {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    padding: 40px 6%;
+
+    background-color: white;
+}
+
+
+.feature-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    border: 1px solid #dce5ef;
+
+    border-radius: 8px;
+
+    background-color: white;
+}
+
+
+.feature-card:hover {
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.feature-icon {
+    min-width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #e4f0ff;
+
+    color: #1478ed;
+
+    font-size: 24px;
+}
+
+
+.feature-card h3 {
+    margin-bottom: 8px;
+
+    font-size: 17px;
+}
+
+
+.feature-card p {
+    color: #6b7d91;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* ================= EXAMS ================= */
+
+.exams {
+    padding: 50px 6%;
+}
+
+
+.section-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+
+.section-heading h2 {
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+
+.section-heading p {
+    color: #718096;
+}
+
+
+.section-heading a {
+    color: #1478ed;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* Exam Container */
+
+.exam-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Exam Card */
+
+.exam-card {
+    position: relative;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #dce5ef;
+
+    border-radius: 8px;
+}
+
+
+.exam-card:hover {
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.exam-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    border-radius: 50%;
+
+    background-color: #e9e4ff;
+
+    color: #6346d9;
+
+    font-weight: bold;
+}
+
+
+.exam-card h3 {
+    font-size: 17px;
+
+    margin-bottom: 8px;
+}
+
+
+.subject {
+    color: #5274a0;
+
+    margin-bottom: 20px;
+}
+
+
+.exam-card > p {
+    font-size: 14px;
+
+    color: #52667c;
+
+    margin-bottom: 10px;
+}
+
+
+/* Status */
+
+.status {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background-color: #d9f8e9;
+
+    color: #16834e;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* Exam Button */
+
+.exam-card button {
+    margin-top: 20px;
+
+    padding: 9px 18px;
+
+    border: 1px solid #1478ed;
+
+    border-radius: 5px;
+
+    background-color: white;
+
+    color: #1478ed;
+
+    cursor: pointer;
+}
+
+
+.exam-card button:hover {
+    background-color: #1478ed;
+
+    color: white;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 6%;
+
+    background-color: #123b68;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+footer strong {
+    margin-right: 15px;
+}

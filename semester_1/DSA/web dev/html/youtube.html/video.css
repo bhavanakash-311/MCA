@@ -1,0 +1,54 @@
+.main-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;   
+    row-gap: 15px;
+    
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+.thumbnail{
+    width: 100%;
+}
+
+.author{
+    font-size: 14px;
+    color:rgb(96, 96, 96);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    
+}
+
+.view-count{
+   
+    font-size: 14px;
+    color:rgb(96, 96, 96);
+    margin: 0px;
+    
+}
+
+.video-info-grid{
+    display:grid;
+    grid-template-columns: 50px 1fr;
+}
+.caption{
+    margin: 0;
+}
+
+.channel-picture{
+    
+    width: 50px;
+    vertical-align: top;
+
+}
+
+.profile-pic{
+    width: 40px;
+    border-radius: 50px;
+}
+
+

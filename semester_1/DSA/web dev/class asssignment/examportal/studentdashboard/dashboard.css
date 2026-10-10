@@ -1,0 +1,123 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fc;
+    color: #173b68;
+}
+
+
+.main-container{
+    display:flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    flex: 1;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    width: 200px;
+    background-color: rgb(3, 3, 59);
+}
+
+.sidebar-text{
+    display: block;
+    color: white;
+    height: 30px;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+.right-side{
+    flex: 1;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+.right1{
+    flex:1;
+    height: 60px;
+    
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 150px; ;
+    border: 1px ;
+    border-style: groove;
+    border-color: grey;
+}
+.no-content{
+    background-color: white;
+}
+.notification-bar{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.notification-image{
+    width : 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.profile-pic{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+
+}
+.profile-name{
+    margin: 0;
+    padding-top: 5px;
+}
+
+.right2{
+    flex: 1;
+    background-color: rgb(196, 230, 242);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome{
+    flex : 50px;
+    
+}
+
+.stat{
+    flex: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.stat1{
+  display: grid;
+  grid-template-columns: 30px 1fr;  
+  border: 1px ;
+  border-style: groove;
+  border-color: grey;
+  border-radius: 4px;
+  
+}
+.stat-text{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.stat-icon{
+    width: 40px;
+    height: 40px;
+}

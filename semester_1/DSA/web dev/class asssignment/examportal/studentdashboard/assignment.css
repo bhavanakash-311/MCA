@@ -1,0 +1,110 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fc;
+    color: #173b68;
+}
+
+
+/*===================header========================*/
+.header{
+    display: flex;
+
+}
+.logo-image{
+    flex: 1;
+    justify-content: center;
+    
+}
+.india-logo{
+    flex: 100px;
+}
+.azad-logo{
+    flex: 100px;
+    justify-content: center;
+
+}
+.first-bar{
+    display:flex;
+    justify-content: space-between;
+    margin: 10;
+    background-color: rgb(119, 29, 29);
+}
+.scrolling-text{
+    display: block;
+    padding: 15px;
+    animation: "scrolling-text";
+    background-color: rgb(119, 29, 29);
+    color: white;
+    font-weight: bold;
+
+}
+
+.nav-text{
+    display: inline-block;
+    font-family: "Merriweather", "Times New Roman", Times, serif;
+    color: white;
+    font-size: 20px; 
+    padding: 20px;  
+   
+}
+.navigate{
+
+    display: flex;
+    justify-content: center;
+    background-color:rgb(119, 29, 29);
+}
+
+.img-icon{
+    width: 80px;
+}
+.logo-icons{
+    display: flex;
+    margin: 16px;
+
+}
+.facebook-icon{
+    width: 30px;
+}
+
+.line-1{
+    background-color: #912b2b;
+    height: 10px;
+}
+.line-2{
+    background-color: white;
+    height: 15px;
+
+}
+.line-3{
+    background-color: #912b2b;
+    height: 5px;
+}
+.page-image{
+    width: 100%;
+    object-fit: cover;
+}
+.message{
+    display: flex;
+    
+}
+.director-image{
+    flex : 120px;
+    height:100px;
+    width: 100px;
+}
+.nirf-image{
+    flex: 1;
+    height: 200px;
+    width: 500px;
+}
+.message-text{
+    flex: 1;
+}

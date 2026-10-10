@@ -1,0 +1,32 @@
+.grid1{
+    display: grid;
+    grid-template-columns: 100px 100px ;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: 100px 100px 1fr;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr; 
+
+}
+.grid4{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.div1{
+    background-color: lightblue;
+    height: 100px;
+}
+.div2{
+    background-color: lightpink;
+    height: 100px;
+
+}
+
+.div3{
+    background-color: lightgreen;
+    height: 100px;
+}
